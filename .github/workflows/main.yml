@@ -7,7 +7,7 @@ on:
 
 jobs:
   Version:
-    if: contains(github.event.pull_request.labels.*.name, 'NO BUMP')
+    if: contains(github.event.pull_request.labels.*.name , 'NO BUMP') == false
     runs-on: ubuntu-latest
 
     steps:
