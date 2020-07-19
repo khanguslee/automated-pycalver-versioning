@@ -7,7 +7,7 @@ on:
 
 jobs:
   Version:
-    if: contains(github.event.pull_request.labels.*.name, 'NO_BUMP')
+    if: contains(github.event.pull_request.labels.*.name, 'NO BUMP')
     runs-on: ubuntu-latest
 
     steps:
@@ -44,3 +44,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           poetry run pycalver bump
+<<<<<<< HEAD
+=======
+          git push --force
+          git push origin --tags
+>>>>>>> 3683b4845cd708ab2178015250e1d906cf9dca53
