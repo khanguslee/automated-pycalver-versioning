@@ -31,3 +31,9 @@ push = true
     '[Version {pep440_version}]',
     'img.shields.io/static/v1.svg?label=version&message={pep440_version}&color=blue'
 ]
+"spike/__init__.py" = [
+    '__version__ = "{pep440_version}"'
+]
+"tests/test_spike.py" = [
+    '__version__ == "{pep440_version}"'
+]
