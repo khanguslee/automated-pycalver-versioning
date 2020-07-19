@@ -29,4 +29,16 @@ Instructions on how to setup from scratch.
 
 5. Edit file patterns in `[pycalver.file_patterns]` inside [pyproject.toml](pyproject.toml)
 
+6. Validate everything was set up correctly
+
+    ```bash
+    poetry run pycalver bump --dry
+    ```
+
+7. If there's no errors, you can bump versions
+
+   ```bash
+   poetry run pycalver bump
+   ```
+
 [version_img]: https://img.shields.io/static/v1.svg?label=version&message=202007.1&color=blue
