@@ -1,6 +1,6 @@
 # Automated pycalver Versioning
 
-[![Version 202007.1][version_img]]()
+[![Version 202007.2][version_img]]()
 
 Spike program to work out how to get pycalver to automatically version files with every master branch commit.
 
@@ -41,4 +41,4 @@ Instructions on how to setup from scratch.
    poetry run pycalver bump
    ```
 
-[version_img]: https://img.shields.io/static/v1.svg?label=version&message=202007.1&color=blue
+[version_img]: https://img.shields.io/static/v1.svg?label=version&message=202007.2&color=blue
