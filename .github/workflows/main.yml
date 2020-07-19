@@ -20,9 +20,6 @@ jobs:
       - name: Install Poetry
         uses: dschep/install-poetry-action@v1.3
 
-      - name: Install Poetry
-        uses: dschep/install-poetry-action@v1.2
-
       - name: Cache Poetry virtualenv
         uses: actions/cache@v1
         id: cache
@@ -43,4 +40,4 @@ jobs:
 
       - name: Bump version
         run: |
-          poetry run pycalver bump --dry
+          poetry run pycalver bump
