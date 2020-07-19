@@ -1,6 +1,7 @@
 # Automated pycalver Versioning
 
 [![Version 202007.1][version_img]]()
+
 Spike program to work out how to get pycalver to automatically version files with every master branch commit.
 
 ## Setting Up
@@ -25,5 +26,7 @@ Instructions on how to setup from scratch.
     ```bash
     poetry run pycalver init
     ```
+
+5. Edit file patterns in `[pycalver.file_patterns]` inside [pyproject.toml](pyproject.toml)
 
 [version_img]: https://img.shields.io/static/v1.svg?label=version&message=202007.1&color=blue
