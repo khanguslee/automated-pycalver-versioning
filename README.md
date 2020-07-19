@@ -41,4 +41,6 @@ Instructions on how to setup from scratch.
    poetry run pycalver bump
    ```
 
+8. See [Github Actions workflow](.github/workflows/main.yml) to automate the process upon push to `master` branch.
+
 [version_img]: https://img.shields.io/static/v1.svg?label=version&message=202007.2&color=blue
