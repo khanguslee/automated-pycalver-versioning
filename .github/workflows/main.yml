@@ -40,4 +40,7 @@ jobs:
 
       - name: Bump version
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           poetry run pycalver bump
+          git push
