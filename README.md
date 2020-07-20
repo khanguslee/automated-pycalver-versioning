@@ -4,6 +4,8 @@
 
 Spike program to work out how to get pycalver to automatically version files with every master branch commit.
 
+**Note: A fully automated pycalver versioning system only works if the branch you are in is _not protected_.**
+
 ## Setting Up
 
 Instructions on how to setup from scratch.
@@ -42,5 +44,19 @@ Instructions on how to setup from scratch.
    ```
 
 8. See [Github Actions workflow](.github/workflows/main.yml) to automate the process upon push to `master` branch.
+
+## What does pycalver do?
+
+The following steps occur when you run `pycalver bump`, as mentioned in the [pycalver readme](https://gitlab.com/mbarkhau/pycalver#bump-it-up)
+
+> 0. _Check_ that your repo doesn't have any local changes.
+> 1. _Fetch_ the most recent global VCS tags from origin (-n/--no-fetch to disable).
+> 2. _Generate_ a new version, incremented from the current version.
+> 3. _Update_ version strings in all files configured in file_patterns.
+> 4. _Commit_ the updated version strings.
+> 5. _Tag_ the new commit.
+> 6. _Push_ the new commit and tag.
+
+`pycalver` uses the largest git tag that matches the `version_pattern` stated in your config file. Mentioned in the readme [here](https://gitlab.com/mbarkhau/pycalver#bump-it-up).
 
 [version_img]: https://img.shields.io/static/v1.svg?label=version&message=202007.2&color=blue
