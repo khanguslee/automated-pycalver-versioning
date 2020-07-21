@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "automated-pycalver-versioning"
-version = "202007.2"
+version = "202007.3"
 description = "Spike project to work out automated pycalver versioning"
 authors = ["khanguslee <khanguslee@gmail.com>"]
 license = "MIT"
@@ -16,7 +16,7 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 [pycalver]
-current_version = "v202007.0002"
+current_version = "v202007.0003"
 version_pattern = "{pycalver}"
 commit = true
 tag = true

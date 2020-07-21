@@ -1,6 +1,6 @@
 # Automated pycalver Versioning
 
-[![Version 202007.2][version_img]]()
+[![Version 202007.3][version_img]]()
 
 Spike program to work out how to get pycalver to automatically version files with every master branch commit.
 
@@ -65,4 +65,4 @@ You can automate pycalver version bumping if the branch you want to commit on (u
 
 If your branch _is_ protected, you can still tag your branch with the new version number and push it using `pycalver`. However, if you want to commit related file changes that edit version number strings, you cannot do this automatically.
 
-[version_img]: https://img.shields.io/static/v1.svg?label=version&message=202007.2&color=blue
+[version_img]: https://img.shields.io/static/v1.svg?label=version&message=202007.3&color=blue
